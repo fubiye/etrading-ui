@@ -10,12 +10,14 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from "@angular/platform-browser";
 import { loadSvgResources } from "./utils/svg.util";
 import { StocksComponent } from './stock/stocks.component';
+import { BondComponent } from './bond/bond.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    StocksComponent
+    StocksComponent,
+    BondComponent
   ],
   imports: [
     HttpClientModule,

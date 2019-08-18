@@ -1,0 +1,12 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let bond of bonds">
+    <mat-expansion-panel-header>
+      <mat-panel-title> {{bond.symbol}} </mat-panel-title>
+      <mat-panel-description> {{bond.name}}</mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="detail">
+      <span>{{bond.symbol}}</span>
+      <span>{{bond.name}}</span>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
