@@ -9,11 +9,13 @@ import { MyMaterialModule} from '../material-module';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from "@angular/platform-browser";
 import { loadSvgResources } from "./utils/svg.util";
+import { StocksComponent } from './stocks/stocks.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StocksComponent
   ],
   imports: [
     HttpClientModule,
