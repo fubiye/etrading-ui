@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'etrading-ui';
+  navLinks = [{
+    path: '/',
+    label:'Stock'
+  },{
+    path: '/bond',
+    label: 'Bond'
+  }];
 }

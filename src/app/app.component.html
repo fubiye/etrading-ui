@@ -3,5 +3,16 @@
   <mat-icon svgIcon="tradingExchange"></mat-icon>
   <span>OTC Trading</span>
 </mat-toolbar>
+<nav mat-tab-nav-bar>
+  <!-- <a mat-tab-link [routerLink]="['/stock']" routerLinkActive #stockLink="routerLinkActive" [active]="stockLink.isActive">Stock</a>
+  <a mat-tab-link [routerLink]="['/bond']" routerLinkActive #bondLink="routerLinkActive" [active]="bondLink.isActive">Bond</a> -->
+  <a mat-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.path"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{link.label}}
+  </a>
+</nav>
 <router-outlet></router-outlet>
 

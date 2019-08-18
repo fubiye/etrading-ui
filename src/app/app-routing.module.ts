@@ -5,7 +5,7 @@ import { StocksComponent } from './stock/stocks.component';
 import { BondComponent } from './bond/bond.component';
 
 const routes: Routes = [
-  {path:'stock', component: StocksComponent},
+  {path:'', component: StocksComponent},
   {path:'bond', component: BondComponent},
 ]
 
