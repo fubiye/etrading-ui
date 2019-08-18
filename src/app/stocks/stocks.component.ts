@@ -8,12 +8,6 @@ import { StockService } from './stock.service';
   styleUrls: ['./stocks.component.css']
 })
 export class StocksComponent implements OnInit {
-  
-  stock: Stock = {
-    symbol: 'sh600058',
-    code: '600058',
-    name: '五矿发展'
-  };
   stocks: Stock[];
 
   constructor(private stockService: StockService) { }

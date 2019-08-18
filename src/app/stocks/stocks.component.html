@@ -1,3 +1,14 @@
-<li *ngFor="let stock of stocks">
-    {{stock.name}}
-</li>
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let stock of stocks">
+        <mat-expansion-panel-header>
+            <mat-panel-title> {{stock.symbol}} </mat-panel-title>
+            <mat-panel-description> {{stock.name}}</mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="detail">
+            <span>{{stock.symbol}}</span>
+            <span>{{stock.code}}</span>
+            <span>{{stock.name}}</span>
+        </div>
+        
+    </mat-expansion-panel>
+</mat-accordion>
