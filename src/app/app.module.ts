@@ -11,6 +11,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 import { loadSvgResources } from "./utils/svg.util";
 import { StocksComponent } from './stock/stocks.component';
 import { BondComponent } from './bond/bond.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { BondComponent } from './bond/bond.component';
     HttpClientModule,
     BrowserModule, 
     BrowserAnimationsModule,
-    MyMaterialModule
+    MyMaterialModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
