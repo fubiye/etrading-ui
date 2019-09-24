@@ -12,13 +12,15 @@ import { loadSvgResources } from "./utils/svg.util";
 import { StocksComponent } from './stock/stocks.component';
 import { BondComponent } from './bond/bond.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CommonComponent } from './common/common.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     StocksComponent,
-    BondComponent
+    BondComponent,
+    CommonComponent
   ],
   imports: [
     HttpClientModule,
