@@ -13,24 +13,30 @@ import { StocksComponent } from './stock/stocks.component';
 import { BondComponent } from './bond/bond.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonComponent } from './common/common.component';
-
+import { ActionComponent } from './action/action.component';
+import { DialogOverviewExampleDialog } from './action/dialog-overview-example-dialog';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
     AppComponent,
     StocksComponent,
     BondComponent,
-    CommonComponent
+    CommonComponent,
+    ActionComponent,
+    DialogOverviewExampleDialog
   ],
   imports: [
     HttpClientModule,
     BrowserModule, 
     BrowserAnimationsModule,
+    FormsModule,
     MyMaterialModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogOverviewExampleDialog]
 })
 export class AppModule {
    constructor(ir: MatIconRegistry,
